@@ -1,15 +1,11 @@
-// app/layout.tsx
-
-export default function RootLayout({
+export default function AuthLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
-    <html lang="pt">
-      <body style={{ fontFamily: 'sans-serif', margin: 0, padding: 0 }}>
-        {children}
-      </body>
-    </html>
+    <div className="flex min-h-screen flex-col items-center justify-center">
+      {children}
+    </div>
   );
 }

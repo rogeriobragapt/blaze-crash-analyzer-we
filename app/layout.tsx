@@ -1,20 +1,13 @@
-// app/layout.tsx
-import './globals.css'
-import type { Metadata } from 'next'
-
-export const metadata: Metadata = {
-  title: 'Blaze Crash Analyzer Pro',
-  description: 'Ferramenta para análise de padrões no jogo Crash da Blaze.',
-}
-
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
-    <html lang="pt-BR">
-      <body>{children}</body>
+    <html lang="pt">
+      <body style={{ fontFamily: 'sans-serif', margin: 0, padding: 0 }}>
+        {children}
+      </body>
     </html>
-  )
+  );
 }
