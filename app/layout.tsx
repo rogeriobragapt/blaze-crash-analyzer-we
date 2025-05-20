@@ -1,13 +1,20 @@
-// app/login/layout.tsx
+// app/layout.tsx
+import './globals.css'
+import type { Metadata } from 'next'
 
-export default function LoginLayout({
+export const metadata: Metadata = {
+  title: 'Blaze Crash Analyzer Pro',
+  description: 'Ferramenta para análise de padrões no jogo Crash da Blaze.',
+}
+
+export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: React.ReactNode
 }) {
   return (
-    <div style={{ padding: '2rem', background: '#f9f9f9', minHeight: '100vh' }}>
-      {children}
-    </div>
-  );
+    <html lang="pt-BR">
+      <body>{children}</body>
+    </html>
+  )
 }
