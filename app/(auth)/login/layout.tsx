@@ -1,13 +1,15 @@
-// app/login/layout.tsx
+// app/layout.tsx
 
-export default function LoginLayout({
+export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
-    <section style={{ padding: '2rem' }}>
-      {children}
-    </section>
+    <html lang="pt">
+      <body style={{ fontFamily: 'sans-serif', margin: 0, padding: 0 }}>
+        {children}
+      </body>
+    </html>
   );
 }
